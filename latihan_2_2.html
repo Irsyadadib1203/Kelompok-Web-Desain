@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form html</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body> 
+    <center>
+    <img src="gambar/icon.png" alt="Gambar-Pemandangan" style=" margin: right 20px;;" width="150" height="150">
+    <center>
+    <center>
+        <body>
+    <h2 style="color :blue"; > Pendaftaran Mahasiswa Baru </h2>
+        </body>
+    </center>
+    <form action="latihan_1_10.html" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir</td>
+                <td><input type="text" name="tempat_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="number" name="tanggal_lahir" min="1" max="31" placeholder="DD" required>
+                    <input type="number" name="bulan_lahir" min="1" max="12" placeholder="MM" required>
+                    <input type="number" name="tahun_lahir" min="2000" max="2024" placeholder="YYYY" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>
+                    <select name="agama" required>
+                        <option value="">Pilih</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Konghucu">Konghucu</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki_laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>No.Ijazah SMA/MA</td>
+                <td><input type="text" name="no_ijazah" required></td>
+            </tr>
+            <tr>
+                <td>Foto (UKuran file maks.20 KB)</td>
+                <td><input type="file" name="foto" accept="image/*" required></td>
+            </tr>
+            <tr>
+                <td>Nama Ayah</td>
+                <td><input type="text" name="nama_ayah" required></td>
+            </tr>
+            <tr>
+                <td>Nama Ibu</td>
+                <td><input type="text" name="nama_ibu" required></td>
+            </tr>
+            <tr>
+                <td>Alamat Rumah</td>
+                <td><textarea name="alamat" required></textarea></td>
+            </tr>
+            <tr>
+                <td>No.telp</No></td>
+                <td><input type="tel" name="no_telp" required></td>
+            </tr>
+            <tr>
+                <td>Nama Sekolah Asal</td>
+                <td><input type="text" name="sekolah_asal" required></td>
+            </tr>
+            <tr>
+                <td>Alamat Sekolah Asal</td>
+                <td><textarea name="alamat_sekolah" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Jurusan yang Dipilih</td>
+                <td>
+                    <select name="jurusan" required>
+                        <option value="">Pilih</option>
+                        <option value="Teknologi Informasi" style="color: blue;">Teknologi Informasi</option>
+                        <option value="TKK" style="color: aqua;">TKK</option>
+                        <option value="TRPL" style="color: purple;">TRPL</option>
+                        <option value="TRO" style="color: red;">TRO</option>
+                        <option value="Akutansi" style="color: aquamarine;">Akutansi</option>
+                        <option value="Bahasa Inggris" style="color: aqua;">Bahasa Inggris</option>
+                        <option value="Teknik Listrik" style="color: green;">Teknik Listrik</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tahu Informasi dari</td>
+                <td>
+                    <input type="checkbox" id="koran" name="sumber_info[]" value="Koran">
+                    <label for="koran">Koran</label>
+                    <input type="checkbox" id="website" name="sumber_info[]" value="Website">
+                    <label for="website">Website</label>
+                    <input type="checkbox" id="televisi" name="sumber_info[]" value="Televisi">
+                    <label for="televisi">Televisi</label>
+                    <input type="checkbox" id="radio" name="sumber_info[]" value="Radio">
+                    <label for="radio">Radio</label>
+                    <input type="checkbox" id="teman" name="sumber_info[]" value="Teman">
+                    <label for="teman">Teman</label>
+                    <input type="checkbox" id="Pacar" name="sumber_info[]" value="Pacar">
+                    <label for="Pacar">Mantan</label>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="DAFTAR" style="color: blue;">
+        <input type="reset" value="BATAL" style="color: blue;">
+    </form>
+</body>
+</html>
