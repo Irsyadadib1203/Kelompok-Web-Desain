@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran Mahasiswa Baru</title>
+    <link rel="icon" href="html_form/gambar/icon.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <link rel="stylesheet" href="html_form/css/main.css">
+</head>
+<body>
+    <div id="main"> 
+        <div id="content">
+            <form action="proses.php" method="post">
+            <fieldset>
+                <legend>Pendaftaran Mahasiswa Baru</legend>
+                <table>
+                    <tr>
+                        <td>Nama Lengkap Mahasiswa </td>
+                        <td> <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ttl">Tempat/Tanggal Lahir</label></td>
+                        <td><input for="text" id="ttl" name="ttl"> / 
+                            <input type="number" id="tgl_lahir" name="tgl_lahir" min="1" max="31" placeholder="Tanggal" required>
+                            <input type="number" id="bln_lahir" name="bln_lahir" min="1" max="12" placeholder="Bulan" required>
+                            <input type="number" id="thn_lahir" name="thn_lahir" min="1900" max="2099" placeholder="Tahun" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td>
+                            <select value="PILIH" >
+                                <option>Islam</option>
+                                <option>Kristen</option>
+                                <option>Budha</option>
+                                <option>katolik</option>
+                                <option>konghucu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" value="Laki" name="Kelamin"><label for="laki">Laki-laki</label>
+                            <input type="radio" value="Perempuan" name="Kelamin"><label for="Perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>No.Ijazah SMA/MA</td>
+                        <td> 
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FOTO (Ukuran File Maks. 20KB)</td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nama Ayah</td>
+                        <td> <input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Ibu</td>
+                        <td> <input type="text"></td>
+                    </tr>
+                    <tr >
+                        <td>Alamat Rumah</td>
+                        <td><textarea rows="10" cols="35"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>No.Telp</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Asal Sekolah</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat Sekolah</td>
+                        <td><textarea rows="10" cols="35"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan DiPilih</td>
+                        <td>
+                            <select>
+                                <option>Teknik Listrik</option>
+                                <option>Teknik Komputer Kontrol</option>
+                                <option selected>Teknologi Informasi</option>
+                                <option>Mesin Otomotif</option>
+                                <option>Perkeretaapian</option>
+                                <option>Administrasi Bisnis</option>
+                                <option>Komputasi Akuntansi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tahu Informasi Ini Dari</td>
+                        <td>
+                            <input type="checkbox" name="tv"><label for="tv">Telivisi</label>
+                            <input type="checkbox" name="Koran"><label for="koran">koran</label>
+                            <input type="checkbox" name="web"><label for="web">Website</label>
+                            <input type="checkbox" name="Radio"><label for="radio">Radio</label>
+                            <input type="checkbox" name="teman"><label for="teman">Teman</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="DAFTAR" >  <input type="reset" value="BATAL"></td>
+                    </tr>
+                </table>
+        </fieldset>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
