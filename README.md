@@ -1,4 +1,4 @@
-# Nama Aplikasi
+# SimpulIlmu
 > Deskripsi Aplikasi.
 Simpulilmu Adalah Sebuah Website yang digunakan Untuk Pembelajaran Secara Online di Jenjang SMA/MA.website ini berisi berbagai materi pembelajaran yang sesuai dengan Sistem Pembelajaran di sekolah.
 
