@@ -1,0 +1,66 @@
+body {
+  background-image: url(/Gambar/baground2.jpeg);
+  background-size: cover;
+
+}
+header {
+  font-size: 60px;
+  margin: 20px 30px;
+  text-align: center;
+}
+.content {
+  background-color: rgba(255, 255, 255, 0.854);
+  border-radius: 8px;
+  margin: 80px 300px 0px;
+  padding: 6px 50px 1px;
+}
+.content h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 1px;
+}
+.content p {
+  text-align: center;
+  font-size: 30px;
+}
+.jenjang {
+  justify-content: center;
+}
+.btn-Oke {
+  background-color: #fafafa;
+  border: none;
+  color: rgb(0, 202, 253);
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 40px 352px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.btn-XI,
+.btn-X,
+.btn-XII {
+  background-color: #06c0f9;
+  border: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 40px;
+  margin: 10px 340px 4px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.btn-X:hover,
+.btn-XI:hover,
+.btn-XII:hover,
+.btn-Oke:hover {
+  transform: scale(1.1);
+}
+.btn-X::after,
+.btn-XI::after,
+.btn-XII::after,
+.btn-Oke::after {
+  transform: scale(1);
+}
